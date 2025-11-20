@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تعریف مجموعه‌ها</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>تعریف مجموعه A</h2>
+
+<label>عضو کدام مجموعه شناخته شده است؟</label>
+<select id="knownSet">
+  <option value="">انتخاب کنید...</option>
+  <option value="N">N (اعداد طبیعی)</option>
+  <option value="W">W (اعداد حسابی)</option>
+  <option value="Z">Z (اعداد صحیح)</option>
+  <option value="Q">Q (اعداد گویا)</option>
+  <option value="I">I (اعداد گنگ)</option>
+  <option value="R">R (اعداد حقیقی)</option>
+</select>
+
+<label>شرط را به صورت کلامی بنویسید:</label>
+<input id="textCondition" type="text" placeholder="مثلاً بزرگتر مساوی 3 و کوچکتر مساوی 8">
+
+<button onclick="makeExpression()">نمایش نماد ریاضی</button>
+<div id="mathResult" class="result-box"></div>
+
+<button onclick="showMembers()">نمایش اعضا</button>
+<div id="membersBox" class="result-box"></div>
+
+<button onclick="showVenn()">نمایش نمودار ون</button>
+<canvas id="vennCanvas"></canvas>
+
+<button onclick="showAxis()">نمایش محور</button>
+<canvas id="axisCanvas"></canvas>
+
+<button class="big-btn" onclick="window.location.href='page4.html'">انجام عملیات ریاضی</button>
+
+<script src="script.js"></script>
+</body>
+</html>
